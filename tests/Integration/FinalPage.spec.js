@@ -70,4 +70,13 @@ test.describe('Final Page validation', () => {
 
   })
 
+   test('Validate Backhomebutton2',async({page})=>{
+
+
+    await finalPage.clickOnBackHomeBtn();
+    await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
+
+  })
+
+
 })
